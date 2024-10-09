@@ -1,0 +1,149 @@
+.container{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1fdb;
+}
+
+.subscriptioncontainer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+  margin-top: 70px;
+}
+
+.planssection {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.plancard {
+  padding: 20px;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 30%;
+}
+
+.plancard:hover {
+  transform: scale(1.05);
+}
+
+.selected {
+  border: 2px solid #00d8ff;
+  box-shadow: 0px 0px 4px white;
+}
+
+.bestvalue {
+  background-color: #00d8ff;
+  color: #000;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.planname {
+  font-size: 22px;  /* Adjusted font size */
+  font-weight: bold;
+}
+
+.originalprice {
+  color: #b5b5b5; /* Removed line-through */
+  font-size: 18px; /* Adjusted font size */
+}
+
+.discountedprice {
+  font-size: 26px;  /* Adjusted font size for better visibility */
+  font-weight: bold;
+  color: #fff;
+}
+
+.discount {
+  font-size: 16px;  /* Slightly increased font size for readability */
+  color: #b5b5b5;
+  margin-top: 10px;
+}
+
+.couponsection {
+  display: flex;
+  margin-top: 20px;
+}
+
+.couponsection input {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.couponsection button {
+  padding: 10px;
+  background-color: #00d8ff;
+  color: #000;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.paymentsection {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finalprice {
+  font-size: 20px; /* Increased font size for emphasis */
+  font-weight: bold;
+}
+
+.paybtn {
+  padding: 12px 24px; /* Slightly increased padding for better button size */
+  background-color: #ff5c5c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .plancard {
+    width: 45%; /* Adjust plan card width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .plancard {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .planssection {
+    gap: 15px;
+  }
+
+  .couponsection input {
+    width: 60%;
+  }
+
+  .couponsection button {
+    width: 40%;
+  }
+
+  .finalprice {
+    font-size: 18px;
+  }
+
+  .paybtn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,105 @@
+.charactercard {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 20px;
+}
+
+.charactercard:hover {
+  transform: scale(1.05);
+}
+
+.characterimage img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.characterdetails {
+  padding: 10px;
+}
+
+.characterdetails h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.characterdetails p {
+  font-size: 14px;
+  color: #555;
+}
+
+.role {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Responsive Layout */
+
+/* For tablets and smaller devices */
+@media (max-width: 1024px) {
+  .charactercard {
+    width: 180px;
+  }
+
+  .characterdetails h2 {
+    font-size: 16px;
+  }
+
+  .characterdetails p {
+    font-size: 13px;
+  }
+
+  .role {
+    font-size: 11px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .charactercard {
+    width: 160px;
+  }
+
+  .characterdetails h2 {
+    font-size: 15px;
+  }
+
+  .characterdetails p {
+    font-size: 12px;
+  }
+
+  .role {
+    font-size: 10px;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .charactercard {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .characterdetails h2 {
+    font-size: 14px;
+  }
+
+  .characterdetails p {
+    font-size: 12px;
+  }
+
+  .role {
+    font-size: 9px;
+  }
+}

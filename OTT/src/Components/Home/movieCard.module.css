@@ -1,0 +1,83 @@
+.moviecard {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 20px;
+}
+
+.moviecard:hover {
+  transform: scale(1.05);
+}
+
+.movieimage img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.moviedetails {
+  padding: 10px;
+}
+
+.moviedetails h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.moviedetails p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .moviecard {
+    width: 180px;
+  }
+
+  .moviedetails h2 {
+    font-size: 16px;
+  }
+
+  .moviedetails p {
+    font-size: 13px;
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+  .moviecard {
+    width: 160px;
+  }
+
+  .moviedetails h2 {
+    font-size: 15px;
+  }
+
+  .moviedetails p {
+    font-size: 12px;
+  }
+}
+
+/* Very small screens (small mobile phones) */
+@media (max-width: 480px) {
+  .moviecard {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .moviedetails h2 {
+    font-size: 14px;
+  }
+
+  .moviedetails p {
+    font-size: 12px;
+  }
+}

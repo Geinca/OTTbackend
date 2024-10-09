@@ -1,0 +1,96 @@
+/* Container for the whole section */
+.channelscontainer {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Title for channels section */
+  .channelstitle {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Grid layout for the channels */
+  .channelsgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual channel card */
+  .channelcard {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  /* Hover effect on card */
+  .channelcard:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Logo inside the card */
+  .channellogo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Channel name */
+  .channelname {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Channel description */
+  .channeldescription {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .channelsgrid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .channellogo {
+      width: 80px;
+    }
+  
+    .channelname {
+      font-size: 18px;
+    }
+  
+    .channeldescription {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .channelstitle {
+      font-size: 28px;
+    }
+  
+    .channellogo {
+      width: 70px;
+    }
+  
+    .channelname {
+      font-size: 16px;
+    }
+  
+    .channeldescription {
+      font-size: 12px;
+    }
+  }
+  

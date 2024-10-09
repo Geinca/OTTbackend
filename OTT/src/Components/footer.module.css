@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.section {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.section h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 5px;
+}
+#links {
+  text-decoration: none;
+  color: white;
+
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.connect, .app {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialmedia {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.socialmedia li {
+  margin: 0 10px;
+}
+
+.appstore li {
+  margin: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  margin-top: -20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .connect, .app {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
+  }
+  
+  .section {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .socialmedia li {
+    margin: 0 5px;
+  }
+
+  .appstore li {
+    margin: 5px;
+  }
+
+  .appstore li a img {
+    width: 100px;
+  }
+}

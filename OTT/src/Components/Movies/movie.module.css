@@ -1,0 +1,153 @@
+.container {
+  padding: 70px;
+}
+
+.carouselcontainer {
+  max-width: 1200px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannercontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bannerimage {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.moviedetails {
+  margin-left: 50px;
+  text-align: left;
+}
+
+.watchnowbutton {
+  background-color: #ff5c5c;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Adjustments for large tablets and smaller laptops */
+@media (max-width: 1200px) {
+  .carouselcontainer {
+    padding: 20px;
+  }
+
+  .bannerimage {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .carouselcontainer {
+    max-width: 90%;
+  }
+
+  .bannerimage {
+    width: 65%;
+  }
+
+  .movietitle {
+    font-size: 2rem;
+  }
+
+  .moviedetails {
+    margin-left: 20px;
+    padding: 15px;
+  }
+
+  .watchnowbutton {
+    padding: 8px 18px;
+  }
+}
+
+/* Adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+  .carouselcontainer {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .carouselslide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bannercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bannerimage {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .moviedetails {
+    margin-left: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .movietitle {
+    font-size: 1.8rem;
+  }
+
+  .moviesubtitle {
+    font-size: 1rem;
+  }
+
+  .watchnowbutton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 10px;
+  }
+
+  .carouselcontainer {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .bannerimage {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .moviedetails {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .movietitle {
+    font-size: 1.5rem;
+  }
+
+  .moviesubtitle {
+    font-size: 1rem;
+  }
+
+  .watchnowbutton {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

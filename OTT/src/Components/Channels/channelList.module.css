@@ -1,0 +1,33 @@
+.channelListContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .filterContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filterContainer button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filterContainer button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .channelsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+  

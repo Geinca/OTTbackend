@@ -1,0 +1,34 @@
+.channelCard {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .channelCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .channelImage {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .channelInfo {
+    padding: 15px;
+  }
+  
+  .channelInfo h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .channelInfo p {
+    font-size: 14px;
+    color: #777;
+  }
+  

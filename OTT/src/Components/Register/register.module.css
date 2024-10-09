@@ -1,0 +1,183 @@
+.Register {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #2e0446;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.leftpanel {
+  flex: 1;
+  padding: 2rem;
+  background: #431073;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftpanel h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.leftpanel p {
+  margin-bottom: 1.5rem;
+}
+
+.primarybutton {
+  background-color: #8137ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primarybutton:hover {
+  background-color: #692fe3;
+}
+
+.formcontainer {
+  flex: 1;
+  padding: 2rem;
+  background: #4f1a7f;
+}
+
+.formcontainer h2 {
+  margin-bottom: 1rem;
+}
+
+.formcontainer input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #6b3f9f;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.formcontainer input::placeholder {
+  color: #b48fd0;
+}
+
+.sociallogin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.socialbutton {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.socialbutton.facebook {
+  background-color: #3b5998;
+}
+
+.socialbutton.google {
+  background-color: #db4437;
+}
+
+.socialbutton:hover {
+  opacity: 0.9;
+}
+
+.togglelink {
+  color: #8137ff;
+  cursor: pointer;
+}
+
+.togglelink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .leftpanel {
+    padding: 1.5rem;
+  }
+
+  .leftpanel h1 {
+    font-size: 2rem;
+  }
+
+  .formcontainer {
+    padding: 1.5rem;
+  }
+
+  .formcontainer input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .socialbutton {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .leftpanel h1 {
+    font-size: 1.8rem;
+  }
+
+  .primarybutton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .formcontainer {
+    padding: 1rem;
+  }
+
+  .formcontainer input {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .socialbutton {
+    font-size: 0.75rem;
+  }
+}
