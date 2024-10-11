@@ -124,7 +124,7 @@ const Signup = ({ toggleForm }) => {
         e.preventDefault();
         setError('');
         setMessage('');
-
+    
         try {
             const response = await fetch('http://127.0.0.1:8000/api/register/', {
                 method: 'POST',
@@ -137,21 +137,25 @@ const Signup = ({ toggleForm }) => {
                     email: email,
                 }),
             });
-
+    
             const data = await response.json();
-
+    
             if (response.ok) {
                 setMessage('Registration successful! You can now log in.');
-                // Optionally, you can switch to login form automatically
-                // toggleForm();
             } else {
-                setError(data.error);
+                // Check for field-specific errors
+                if (data.username) {
+                    setError(data.username.join(' ')); // Combine array of errors if any
+                } else if (data.email) {
+                    setError(data.email.join(' '));
+                } else {
+                    setError('An error occurred during registration.');
+                }
             }
         } catch (err) {
             setError('Network error. Please try again later.');
         }
     };
-
     return (
         <div>
             <div className={style.formcontainer}>
